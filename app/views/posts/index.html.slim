@@ -1,0 +1,7 @@
+h1
+  = t('application.name')
+
+#posts
+  .row
+    - @posts.each do |post|
+      == render partial: 'post', locals: { post: }

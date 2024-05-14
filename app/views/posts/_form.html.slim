@@ -1,0 +1,8 @@
+= simple_form_for(@post) do |f|
+  .form-inputs
+    = f.input :title
+    = f.association :category
+    = f.input :body
+
+  .form-actions
+    = f.button :submit, class: "btn-#{action_to_css_class_color}"

@@ -1,0 +1,28 @@
+ol.breadcrumb
+  li.breadcrumb-item
+    = link_to t('.all_posts'), root_path
+  li.breadcrumb-item.active = @post.category.name
+.card.mb-3
+  .card-header
+    h3
+      = @post.title
+  .card-body
+    p
+      = simple_format(@post.body)
+  .card-footer.d-flex.justify-content-between
+    .small.text-muted
+      span.me-2
+        = @post.creator.email
+      span
+        = time_ago_in_words(@post.created_at.to_time)
+    == render partial: 'likes/like', locals: { post: @post }
+.lead.mt-3
+  span
+    = t('.comments')
+  - if user_signed_in?
+    = simple_form_for @form_comment, url: post_comments_path(@post) do |f|
+      = f.input :content, as: :text, label: false
+      = f.input :parent_id, as: :hidden, input_html: { value: nil }
+      = f.button :submit, class: 'btn-primary mt-2'
+  - @comments.each do |comment, children|
+    = render 'comments/children', comment:, children:, post: @post, form_comment: @form_comment

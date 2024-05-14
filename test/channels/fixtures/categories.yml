@@ -1,0 +1,16 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Музыка
+
+two:
+  name: Кино
+
+three:
+  name: Программирование
+
+four:
+  name: История
+
+five:
+  name: Фантастика
