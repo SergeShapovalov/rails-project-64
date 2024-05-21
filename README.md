@@ -20,7 +20,7 @@ The "Collective Blog" project is a platform that allows users to create, edit, a
 The project is implemented using the following technologies:
 - Ruby 3.2.2
 - Ruby on Rails 7.1.2 framework
-- Node 21.7.2
+- Node 18.19.0
 - Sqlite3 1.7.3 database
 
 ## Installation
