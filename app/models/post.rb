@@ -7,7 +7,7 @@ class Post < ApplicationRecord
   has_many :likes, class_name: 'PostLike', dependent: :destroy
 
   validates :title, presence: true, length: { minimum: 5, maximum: 255 }
-  validates :body, presence: true, length: { minimum: 200, maximum: 4000 }
+  validates :body, presence: true, length: { minimum: 100, maximum: 4000 }
 
   def like_by_user(user)
     likes.find_by(user:)
