@@ -7,7 +7,7 @@ databases:
 
 services:
   - type: web
-    name: collective-blog
+    name: collective_blog
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
