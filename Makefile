@@ -3,7 +3,9 @@ setup: install
 install:
 	bundle install
 	yarn install
-	bundle exec rails db:create db:migrate assets:precompile
+	bundle exec rails db:create
+	bundle exec rails db:migrate
+	bundle exec rails assets:precompile
 
 test:
 	bundle exec rake test
