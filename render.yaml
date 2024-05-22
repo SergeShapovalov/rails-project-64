@@ -1,6 +1,6 @@
 # Exported from Render on 2024-05-22T06:11:02Z
 databases:
-  - name: collective-blog
+  - name: collective_blog
     databaseName: collective_blog
     user: serhii
     plan: free
