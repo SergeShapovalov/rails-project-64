@@ -32,7 +32,7 @@ The project is implemented using the following technologies:
 
 ## Build
 The build is deployed to:
-[Blog](https://rails-project-64-0jv8.onrender.com/)
+[Blog](https://collective-blog-iq69.onrender.com)
 
 ## Roadmap
 - Pass the review and finalize the training project
