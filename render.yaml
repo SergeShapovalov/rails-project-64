@@ -1,0 +1,16 @@
+# Exported from Render on 2024-05-22T06:11:02Z
+services:
+  - type: web
+    name: Collective Blog
+    runtime: docker
+    repo: https://github.com/SergeShapovalov/rails-project-64
+    plan: free
+    envVars:
+      - key: WEB_CONCURRENCY
+        sync: false
+      - key: RAILS_MASTER_KEY
+        sync: false
+    region: frankfurt
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+version: "1"
